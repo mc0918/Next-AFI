@@ -1,7 +1,14 @@
 import Link from 'next/link';
 
 const links = [
-  { href: 'https://github.com/themodernjavascript/create-next-app-cli', label: 'Github' }
+  { href: 'https://github.com/themodernjavascript/create-next-app-cli', label: 'Github' },
+  { href: '/join', label: 'Join!'},
+  { href: '/symba', label: 'Symba'},
+  { href: '/resources', label: 'Resources'},
+  { href: '/our-cause', label: 'Our Cause'},
+  { href: '/our-mission', label: 'Our Mission'},
+  { href: '/Team', label: 'Team'},
+  { href: '/Contact', label: 'Contact'}
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -12,7 +19,7 @@ const Nav = () => (
     <ul>
       <li>
         <Link prefetch href="/">
-          <a>Home</a>
+          <a>AFI</a>
         </Link>
       </li>
       <ul>
