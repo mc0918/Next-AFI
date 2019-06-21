@@ -2,12 +2,12 @@ import Link from 'next/link'
 import { string } from 'prop-types';
 
 
-const imageHeader = (props) => (
-    <div>yee</div>
+const ImageHeader = (props) => (
+    <img src={props.image} />
 );
 
-imageHeader.propTypes = {
+ImageHeader.propTypes = {
     image: string
 };
 
-export default imageHeader;
+export default ImageHeader;
