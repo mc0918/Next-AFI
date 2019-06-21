@@ -42,6 +42,9 @@ const Nav = () => (
       }
       nav {
         text-align: center;
+        position: fixed;
+        background: black;
+        width: 100%;
       }
       ul {
         display: flex;
