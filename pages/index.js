@@ -11,34 +11,14 @@ export default () => (
     <Nav />
     <ImageHeader image={'../static/994699.jpg'} headerText={title}/>
     <div className="hero">
-      <h1 className="title">Welcome to create-next-app-cli (Create Next.js App building tools)</h1>
-      <p className="description">To get started, edit <code>pages/index.js</code> and save to reload.</p>
+      <h1 className="title">Helping artists live happier lives by bringing them together</h1>
+      <p className="description">Artists Fighting Isolation is dedicated to creating solutions to the unique struggles faced by artists everywhere. </p>
       <div className="row">
-        <Link href="https://nextjs.org/docs/">
           <a className="card">
             <h3>Getting Started &rarr;</h3>
             <p>Learn more about Next.js on official website</p>
           </a>
-        </Link>
-        <Link href="https://github.com/themodernjavascript/create-next-app-cli">
-          <a className="card">
-            <h3>Create Next App CLI &rarr;</h3>
-            <p>Was this tools helpful?</p>
-          </a>
-        </Link>
       </div>
-      <h1>AAA</h1>
-      <br />
-      <h1>AAA</h1>
-      <br />
-      <h1>AAA</h1>
-      <br />
-      <h1>AAA</h1>
-      <br />
-      <h1>AAA</h1>
-      <br />
-      <h1>AAA</h1>
-      <br />
     </div>
 
     <style jsx>{`
@@ -49,10 +29,13 @@ export default () => (
       .title {
         margin: 0;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 40px;
         padding-bottom: 12px;
         line-height: 1.15;
         font-size: 37px;
+      }
+      .description {
+        font-size: 18px;
       }
       .title, .description {
         text-align: center;
