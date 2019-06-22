@@ -13,6 +13,7 @@ export default () => (
     <div className="hero">
       <h1 className="title">Helping artists live happier lives by bringing them together</h1>
       <p className="description">Artists Fighting Isolation is dedicated to creating solutions to the unique struggles faced by artists everywhere. </p>
+      <h1 className='intro'>What you'll find on our website:</h1>
       <div className="row">
           <a className="card">
             <h3>Getting Started &rarr;</h3>
@@ -36,8 +37,12 @@ export default () => (
       }
       .description {
         font-size: 18px;
+        padding-bottom: 12px;
       }
       .title, .description {
+        text-align: center;
+      }
+      .intro {
         text-align: center;
       }
       .row {

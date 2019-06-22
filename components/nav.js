@@ -75,11 +75,11 @@ class Nav extends React.Component{
         justify-content: space-between;
       }
       nav > ul {
-        padding: 4px 16px;
+        padding: 0px 16px;
       }
       li {
         display: flex;
-        padding: 6px 8px;
+        padding: 0px 8px;
       }
       a {
         color: #067df7;
