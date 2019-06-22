@@ -3,12 +3,13 @@ import Head from '../components/head';
 import Nav from '../components/nav';
 import ImageHeader from '../components/imageHeader'
 
+const title = 'Artists Fighting Isolation'
 
 export default () => (
   <div>
     <Head title="Home" />
     <Nav />
-    <ImageHeader image={'../static/994699.jpg'}/>
+    <ImageHeader image={'../static/994699.jpg'} headerText={title}/>
     <div className="hero">
       <h1 className="title">Welcome to create-next-app-cli (Create Next.js App building tools)</h1>
       <p className="description">To get started, edit <code>pages/index.js</code> and save to reload.</p>
@@ -26,6 +27,18 @@ export default () => (
           </a>
         </Link>
       </div>
+      <h1>AAA</h1>
+      <br />
+      <h1>AAA</h1>
+      <br />
+      <h1>AAA</h1>
+      <br />
+      <h1>AAA</h1>
+      <br />
+      <h1>AAA</h1>
+      <br />
+      <h1>AAA</h1>
+      <br />
     </div>
 
     <style jsx>{`
