@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
 import ImageHeader from '../components/imageHeader'
+import Card from '../components/Card'
 
 const title = 'Artists Fighting Isolation'
 
@@ -9,18 +10,21 @@ export default () => (
   <div>
     <Head title="Home" />
     <Nav />
-    <ImageHeader image={'../static/994699.jpg'} headerText={title}/>
+    <ImageHeader image={'../static/mountain.jpg'} headerText={title}/>
     <div className="hero">
       <h1 className="title">Helping artists live happier lives by bringing them together</h1>
       <p className="description">Artists Fighting Isolation is dedicated to creating solutions to the unique struggles faced by artists everywhere. </p>
       <h1 className='intro'>What you'll find on our website:</h1>
-      <div className="row">
-          <a className="card">
+    </div>
+    
+    <div className="row">
+    <Card image={'../static/symbahome.jpg'} bodyText='test' title='test' description='test' buttonText='test'/>
+          {/* <a className="card">
             <h3>Getting Started &rarr;</h3>
             <p>Learn more about Next.js on official website</p>
-          </a>
-      </div>
+          </a> */}
     </div>
+    
 
     <style jsx>{`
       .hero {
