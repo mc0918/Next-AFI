@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';
-import ImageHeader from '../components/imageHeader'
-import Card from '../components/Card'
+import ImageHeader from '../components/imageHeader';
+import CardLeft from '../components/CardImgLeft';
+import CardRight from '../components/CardImgRight';
 
-const title = 'Artists Fighting Isolation'
+const title = 'Artists Fighting Isolation';
 
 export default () => (
-  <div>
+  <div className='grid-container'>
     <Head title="Home" />
     <Nav />
     <ImageHeader image={'../static/mountain.jpg'} headerText={title}/>
@@ -17,16 +18,51 @@ export default () => (
       <h1 className='intro'>What you'll find on our website:</h1>
     </div>
     
-    <div className="row">
-    <Card image={'../static/symbahome.jpg'} bodyText='test' title='test' description='test' buttonText='test'/>
-          {/* <a className="card">
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next.js on official website</p>
-          </a> */}
+    <div className='row'>
+      <div className='col-6'>
+    <CardLeft image={'../static/symbahome.jpg'} 
+    title='Symba' 
+    description='The Social Platform For Artists' 
+    bodyText='In order to combat the tendency towards isolation among artists, we are building a mobile app similar in function to a dating app. Symba will provide a platform for artists to find ideal collaborators for the type of art they do. 
+    It can also help them expand their network, find job opportunities, and combat loneliness with social interaction. The app is mean to create connections that start on the app, but quickly move into the real world. Finally, increased collaboration leads to increased productivity!
+    Opening communication between artists would also make it easier for new and aspiring artists to seek advice, coaching, and industry knowledge. Other people who work directly with artists could use the app to hire and book talent.' 
+    buttonText='Learn more'
+    />   
     </div>
-    
+    </div>
+
+    <div className='row'>
+    <CardRight image={'../static/resourcepage.jpg'}
+    title='Resource Page'
+    bodyText='In the meantime, to help support our members in their creative pursuits until Symba is developed and distributed, we have put together a page of currently available resources, the vast majority of which are free!
+    We hope that artists who use these resources will begin to see how happiness & sustainability in the arts can be the rule, not the exception.'
+    buttonText='Check out these incredible artist resources!'
+    /> 
+    </div>
 
     <style jsx>{`
+      .grid-container {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .row:before,
+      .row:after {
+        content:"";
+        display: table;
+        clear:both;
+        margin: 80px auto 40px;
+        justify-content: space-around;
+      }
+      [class*='col-']{
+        float: left;
+        min-height: 1px;
+        width: 16.66%;
+        padding: 12px;
+      }
+      .col-6{
+        width: 100%
+      }
+
       .hero {
         width: 100%;
         color: #333;
@@ -49,13 +85,7 @@ export default () => (
       .intro {
         text-align: center;
       }
-      .row {
-        max-width: 587px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
+      
       .card {
         padding: 18px 18px 24px;
         width: 220px;

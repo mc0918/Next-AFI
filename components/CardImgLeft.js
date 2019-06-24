@@ -1,13 +1,12 @@
 import Link from 'next/link'
 import { string } from 'prop-types';
 
-const Card = (props) => (
-    <div>
-    <div className='row'>
+const CardLeft = (props) => (
+    <div className='content'>
         <aside>
             <img src={props.image} />
         </aside>
-            <div className='card'>
+        <div className='card'>
             <h3>
                 {props.title}
             </h3>
@@ -29,28 +28,25 @@ const Card = (props) => (
             <button>
                 {props.buttonText}
             </button>
-            </div>    
-        </div>
+        </div>    
     <style jsx>
         {`
-        .row {
-
-        }
         aside {
             float: left;
         }
-        img {
-            float: left;
+        .content {
+            width: 100%;
         }
         .card {
             float: right;
+            width: 50%;
         }
         `}
     </style>
     </div>
 );
 
-Card.propTypes = {
+CardLeft.propTypes = {
     image: string,
     bodyText: string,
     title: string,
@@ -58,4 +54,4 @@ Card.propTypes = {
     buttonText: string
 }
 
-export default Card
+export default CardLeft
