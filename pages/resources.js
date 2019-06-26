@@ -5,11 +5,11 @@ import ImageHeader from '../components/imageHeader';
 import CardLeft from '../components/CardImgLeft';
 import CardRight from '../components/CardImgRight';
 
-const title = 'Artists Fighting Isolation';
+const title = 'Resources';
 
 export default () => (
   <div className='grid-container'>
-    <Head title="Home" />
+    <Head title="Resources" />
     <Nav />
     <ImageHeader image={'../static/mountain.jpg'} headerText={title}/>
     <div className="hero">
