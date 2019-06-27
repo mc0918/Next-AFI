@@ -4,7 +4,7 @@ import { string } from 'prop-types';
 const CardLeft = (props) => (
     <div className='content'>
         <aside>
-            <img src={props.image} />
+            <img src={props.image} alt={props.alt}/>
         </aside>
         <div className='card'>
             <h3>
@@ -48,10 +48,11 @@ const CardLeft = (props) => (
 
 CardLeft.propTypes = {
     image: string,
+    alt: string,
     bodyText: string,
     title: string,
     description: string,
-    buttonText: string
+    buttonText: string,
 }
 
 export default CardLeft

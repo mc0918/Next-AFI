@@ -27,7 +27,7 @@ const CardRight = (props) => (
             </button>
         </div>
         <aside>
-            <img src={props.image} />
+            <img src={props.image} alt={props.alt} />
         </aside>    
     <style jsx>
         {`
@@ -48,6 +48,7 @@ const CardRight = (props) => (
 
 CardRight.propTypes = {
     image: string,
+    alt: string,
     bodyText: string,
     title: string,
     description: string,
