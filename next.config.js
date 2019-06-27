@@ -1,9 +1,8 @@
 module.exports = {
-  // webpack: (config) => {
-  //   config.node = {
-  //     fs: 'empty'
-  //   }
-  //   return config
-  // },
-  target: 'serverless'
+  webpack: (config) => {
+    config.node = {
+      fs: 'empty'
+    }
+    return config
+  }
 };
