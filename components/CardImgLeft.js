@@ -33,13 +33,16 @@ const CardLeft = (props) => (
         {`
         aside {
             float: left;
+            padding-left: 10%;
         }
         .content {
             width: 100%;
         }
         .card {
-            float: right;
+            float: left;
             width: 50%;
+            padding-left: 30px;
+            padding-right: 10px;
         }
         `}
     </style>
