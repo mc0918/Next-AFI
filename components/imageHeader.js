@@ -8,11 +8,13 @@ const ImageHeader = (props) => (
         <style jsx>{`
         .container {
             width: 100%; 
-            height: 429.6px;
+            height: 75vh;
+            background: black;
             }
         img {
             width: 100%; 
-            height: 429.6px;
+            height: 75vh;
+            opacity: 0.7;
             }
         .centered-text {
             color: white;

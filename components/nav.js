@@ -42,6 +42,9 @@ class Nav extends React.Component{
         <ul>
         <li>
          <Link prefetch href="/">
+           <img className="logo" src="../static/AFI-Flat-Logo-Color.png"/>
+         </Link>
+         <Link prefetch href="/">
            <a className="link afi">AFI</a>
          </Link>
        </li>
@@ -66,7 +69,7 @@ class Nav extends React.Component{
       nav {
         text-align: center;
         position: fixed;
-        background: #00dfcf;
+        background: #1B1B1B;
         width: 100%;
         z-index: 1;
       }
@@ -82,12 +85,17 @@ class Nav extends React.Component{
         padding: 0px 8px;
       }
       a {
-        color: #067df7;
+        color: #1B1B1B;
         text-decoration: none;
         font-size: 13px;
       }
+      .logo{
+        max-height: 28px; 
+        max-width: 113px;
+        padding-right: 8px;
+      }
       .link {
-        color: black;
+        color: white;
         font-weight: bold;
         font-size: 15px;
       }
@@ -101,67 +109,3 @@ class Nav extends React.Component{
 }
 
 export default Nav
-//-------------------------------------------------------------
-
-
-// const Nav = () => (
-//   <nav>
-//     <ul>
-//       <li>
-//         <Link prefetch href="/">
-//           <a className="link afi">AFI</a>
-//         </Link>
-//       </li>
-//       <ul>
-//         {links.map(
-//           ({ key, href, label }) => (
-//             <li key={key}>
-//               <Link href={href}>
-//                 <a className="link">{label}</a>
-//               </Link>
-//             </li>
-//           )
-//         )}
-//       </ul>
-//     </ul>
-
-//     <style jsx>{`
-//       :global(body) {
-//         margin: 0;
-//         font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
-//       }
-//       nav {
-//         text-align: center;
-//         position: fixed;
-//         background: #00dfcf;
-//         width: 100%;
-//       }
-//       ul {
-//         display: flex;
-//         justify-content: space-between;
-//       }
-//       nav > ul {
-//         padding: 4px 16px;
-//       }
-//       li {
-//         display: flex;
-//         padding: 6px 8px;
-//       }
-//       a {
-//         color: #067df7;
-//         text-decoration: none;
-//         font-size: 13px;
-//       }
-//       .link {
-//         color: black;
-//         font-weight: bold;
-//         font-size: 15px;
-//       }
-//       .afi {
-//         font-size: 20px;
-//       }
-//     `}</style>
-//   </nav>
-// );
-
-// export default Nav;

@@ -11,7 +11,7 @@ export default () => (
   <div className='grid-container'>
     <Head title="Home" />
     <Nav />
-    <ImageHeader image={'../static/mountain.jpg'} headerText={title}/>
+    <ImageHeader image={'../static/AFIPaintBackground.png'} headerText={title}/>
     <div className="hero">
       <h1 className="title">Helping artists live happier lives by bringing them together</h1>
       <p className="description">Artists Fighting Isolation is dedicated to creating solutions to the unique struggles faced by artists everywhere. </p>
