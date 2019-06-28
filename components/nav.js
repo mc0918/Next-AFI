@@ -14,7 +14,6 @@ const links = [
   return link
 });
 
-//-------------------------------------------------------------
 class Nav extends React.Component{
   constructor(props){
     super(props)
@@ -62,10 +61,6 @@ class Nav extends React.Component{
     </ul>
 
     <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
-      }
       nav {
         text-align: center;
         position: fixed;

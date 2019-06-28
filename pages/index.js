@@ -1,9 +1,11 @@
 import Link from 'next/link';
+
 import Head from '../components/head';
 import Nav from '../components/nav';
 import ImageHeader from '../components/imageHeader';
 import CardLeft from '../components/CardImgLeft';
 import CardRight from '../components/CardImgRight';
+import Footer from "../components/footer"
 
 const title = 'Artists Fighting Isolation';
 
@@ -44,7 +46,14 @@ export default () => (
       </div>
     </div>
 
+    <Footer />
+
     <style jsx>{`
+      :global(body) {
+        margin: 0;
+        font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
+        width: 100%;
+      }
       .grid-container {
         width: 100%;
         box-sizing: border-box;
@@ -62,7 +71,8 @@ export default () => (
         float: left;
         min-height: 1px;
         width: 16.66%;
-        padding: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
       }
       .col-6{
         width: 100%;
