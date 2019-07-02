@@ -8,11 +8,11 @@ import CardRight from '../components/CardImgRight';
 const title = 'Resources';
 const header = 'Careers in the Arts'
 const links = [
-{href: 'https://www.arts.gov/'},
-{href: 'https://www.selfemploymentinthearts.com/'},
-{href: 'https://chicagoartistscoalition.org/'},
-{href: 'https://www.cciarts.org/'},
-{href: 'https://springboardforthearts.org/'}
+{href: 'https://www.arts.gov/', label: 'NEA'},
+{href: 'https://www.selfemploymentinthearts.com/', label: 'SEA'},
+{href: 'https://chicagoartistscoalition.org/', label: 'CAC'},
+{href: 'https://www.cciarts.org/', label: 'CCI Arts'},
+{href: 'https://springboardforthearts.org/', label: 'Springboard For the Arts'}
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -31,12 +31,13 @@ export default () => (
     <div className='row'>
       <ul>
          {links.map(
-          ({ key, href }) => (
-            <li key={key}>
+          ({ key, href, label }) => (
+            <ul key={key}>
+              <h2>{label}</h2>
               <Link href={href}>
                 <a className="link">{href}</a>
               </Link>
-            </li>
+            </ul>
           )
         )}
       </ul>
@@ -95,7 +96,7 @@ export default () => (
         text-align: center;
       }
       .link {
-        
+
       }
     `}</style>
   </div>
