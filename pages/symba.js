@@ -35,29 +35,126 @@ export default () => (
     
     <div className='row'>
       <div className='col-6'>
-        <CardLeft image={'../static/symbahome.jpg'}
-        alt='Co go cleszy my dude' 
-        title='Symba' 
-        description='The Social Platform For Artists' 
-        bodyText='In order to combat the tendency towards isolation among artists, we are building a mobile app similar in function to a dating app. Symba will provide a platform for artists to find ideal collaborators for the type of art they do. 
-        It can also help them expand their network, find job opportunities, and combat loneliness with social interaction. The app is mean to create connections that start on the app, but quickly move into the real world. Finally, increased collaboration leads to increased productivity!
-        Opening communication between artists would also make it easier for new and aspiring artists to seek advice, coaching, and industry knowledge. Other people who work directly with artists could use the app to hire and book talent.' 
-        buttonText='Learn more'
-        />   
+        <img src="../static/SymbaHomeScreen.jpg" />
       </div>
     </div>
 
+    <h2>Filter</h2>
+    <p className='description'>
+        First, you tell us what kind of artist you're looking for.
+    </p>
+
     <div className='row'>
       <div className='col-6'>
-        <CardRight image={'../static/resourcepage.jpg'}
-        alt='motivational!'
-        title='Resource Page'
-        bodyText='In the meantime, to help support our members in their creative pursuits until Symba is developed and distributed, we have put together a page of currently available resources, the vast majority of which are free!
-        We hope that artists who use these resources will begin to see how happiness & sustainability in the arts can be the rule, not the exception.'
-        buttonText='Check out these incredible artist resources!'
-        /> 
+        <img src="../static/SymbaFilterScreen.jpg" />
       </div>
     </div>
+
+    <h2>Swipe</h2>
+    <p className='description'>
+        Then, you can swipe through artists, check out their profile...
+    </p>
+
+    <div className='row'>
+      <div className='col-6'>
+        <img src="../static/SymbaSwipeScreen.jpg" />
+      </div>
+    </div>
+
+    <h2>Browse</h2>
+    <p className='description'>
+        ...and browse through their portfolios and past work!
+    </p>
+
+    <div className='row'>
+      <div className='col-6'>
+        <img src="../static/SymbaBrowseScreen.jpg" />
+      </div>
+    </div>
+
+    <h2>Say hello!</h2>
+    <p className='description'>
+        Finally, if you’re interested in meeting them, you can go ahead and introduce yourself by sending them a message.  
+    </p>
+    <p className='description'>
+        Symba can also be used by startups and nonprofits to connect with creatives and visa versa. 
+    </p>
+
+    <h1>
+        Innovation Model
+    </h1>
+
+    <p className='description'>
+        <b>Need Statement</b>
+    </p>
+
+    <p className='description'>
+        <b>Isolation </b>
+        is more prominent among artists than non-artists and so are debilitating mental health disorders like depression and anxiety. 
+        Artists also have difficulty finding financial security and career fulfillment, because of the lack of job opportunities in the arts. 
+        Most artists find new opportunities through personal connections, so isolation can lead to even less job opportunities and an even higher rate of depression. 
+        These factors lead to a shocking statistic:
+    </p>
+
+    <p className='description'>
+        <i>
+            Artists have a 125% higher likelihood of suicide.
+        </i>
+    </p>
+
+    <p className='description'>
+        <b>Market Opportunity</b>
+    </p>
+
+    <p className='description'>
+        Artists aren't able to easily and affordably meet new friends, collaborators, and valuable career connections. 
+        However, platforms like Facebook, LinkedIn, and Tinder have been successful at implementing intuitive and user friendly interfaces, design flows, and business models to help their users accomplish similar tasks, albeit for totally different audiences and markets.
+    </p>
+
+    <p className='description'>
+        <b>Value Proposition</b>
+    </p>
+
+    <p className='description'>
+        Symba is a new way for artists to make the types of connections they want with people they can relate to, whether it be for socializing, networking, or collaboration.
+        <br />
+        <small>
+        (When we say artists, we mean all creators, performers, designers, and anyone working in the arts.)
+        </small>
+        <br />
+        What we are doing is creating an app with a user experience that takes inspiration from other familiar services like Facebook, LinkedIn, and Tinder. 
+        By doing this we can offer artists a solution to their problem that makes sense and feels natural. 
+        Whenever we test our mock-ups with artists, their first reaction is that this app should've been on the market years ago. 
+        We completely agree!
+    </p>
+
+    <p className='description'>
+        <b>Measurable Impact</b>
+    </p>
+
+    <p className='description'>
+        By using Symba to meet
+        <b>
+        new friends, collaborators, and valuable career connections, 
+        </b>
+        artists will increase their overall quality of life, because they will avoid isolating themselves. 
+        We believe that by re-implementing these already successful models to solve this unique problem we can make the desired impact and maybe even decrease the alarming rate of suicide in this struggling community.
+    </p>
+
+    <h1>AFI on Facebook</h1>
+
+    <p className='description'>
+    Until we launch the app, the best way to connect with our members is by joining the Artists Fighting Isolation facebook group. 
+    Please support our beautiful community! 
+    Click
+    <span> </span>  
+    <Link prefetch href='https://www.facebook.com/groups/artistsfightingisolation/'>
+         <a target='_blank'>
+            here
+        </a>
+    </Link> to join!
+    </p>
+
 
     <Footer />
 
@@ -112,6 +209,9 @@ export default () => (
       }
       .intro {
         text-align: center;
+      }
+      h2, h1 {
+          text-align: center;
       }
     `}</style>
   </div>
