@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react'
 
 const links = [
-  { href: '/join', label: 'Join!'},
+  { href: 'https://www.facebook.com/groups/artistsfightingisolation/', label: 'Join!'},
   { href: '/symba', label: 'Symba'},
   { href: '/resources', label: 'Resources'},
   { href: '/our-cause', label: 'Our Cause'},
