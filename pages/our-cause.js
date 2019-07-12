@@ -25,27 +25,15 @@ export default () => (
     
     <div className='row'>
       <div className='col-6'>
-        <CardLeft image={'../static/symbahome.jpg'}
-        alt='Co go cleszy my dude' 
-        title='Symba' 
-        description='The Social Platform For Artists' 
-        bodyText='In order to combat the tendency towards isolation among artists, we are building a mobile app similar in function to a dating app. Symba will provide a platform for artists to find ideal collaborators for the type of art they do. 
-        It can also help them expand their network, find job opportunities, and combat loneliness with social interaction. The app is mean to create connections that start on the app, but quickly move into the real world. Finally, increased collaboration leads to increased productivity!
-        Opening communication between artists would also make it easier for new and aspiring artists to seek advice, coaching, and industry knowledge. Other people who work directly with artists could use the app to hire and book talent.' 
-        buttonText='Learn more'
+        <CardLeft image={'../static/OurCauseStarvingArtist.jpg'}
+        imgHeight='388px'
+        imgWidth='472px'
+        alt='woman painting' 
+        title='The Starving Artist' 
+        description='Think for a second. Do you know anyone that fits this stereotype?' 
+        bodyText='The trope of the starving artist is one we all know, because of how it’s been taught to us by our media, our history, our society, and our schools, 
+        but what you might not realize is that this cliche is a serious problem that affects more people than you might think. ' 
         />   
-      </div>
-    </div>
-
-    <div className='row'>
-      <div className='col-6'>
-        <CardRight image={'../static/resourcepage.jpg'}
-        alt='motivational!'
-        title='Resource Page'
-        bodyText='In the meantime, to help support our members in their creative pursuits until Symba is developed and distributed, we have put together a page of currently available resources, the vast majority of which are free!
-        We hope that artists who use these resources will begin to see how happiness & sustainability in the arts can be the rule, not the exception.'
-        buttonText='Check out these incredible artist resources!'
-        /> 
       </div>
     </div>
 

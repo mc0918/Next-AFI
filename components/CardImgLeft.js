@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { string } from 'prop-types';
 
+const renderButton = (text) => (
+    <button>{text}</button>
+)
+
 const CardLeft = (props) => (
     <div className='content'>
         <aside>
@@ -25,9 +29,7 @@ const CardLeft = (props) => (
 
             <br />
                 
-            <button>
-                {props.buttonText}
-            </button>
+            {props.buttonText ? renderButton(props.buttonText) : null}    
         </div>    
     <style jsx>
         {`
@@ -44,6 +46,10 @@ const CardLeft = (props) => (
             padding-left: 30px;
             padding-right: 10px;
         }
+        img{
+            height: ${props.imgHeight};
+            width: ${props.imgWidth}
+        }
         `}
     </style>
     </div>
@@ -51,6 +57,8 @@ const CardLeft = (props) => (
 
 CardLeft.propTypes = {
     image: string,
+    imgHeight: string,
+    imgWidth: string,
     alt: string,
     bodyText: string,
     title: string,
