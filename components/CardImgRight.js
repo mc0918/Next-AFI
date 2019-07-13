@@ -1,3 +1,5 @@
+//Same as CardImgLeft component but the position of text and image are switched. See CardImgLeft for documentation
+
 import Link from 'next/link'
 import { string } from 'prop-types';
 

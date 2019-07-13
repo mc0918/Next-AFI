@@ -1,3 +1,6 @@
+//Home Page
+
+//The only import we need besides our own components is this for static pages, pretty cool
 import Link from 'next/link';
 
 import Head from '../components/head';
@@ -7,9 +10,12 @@ import CardLeft from '../components/CardImgLeft';
 import CardRight from '../components/CardImgRight';
 import Footer from "../components/footer"
 
+//Used in the imgHeader component, passed as prop
 const title = 'Artists Fighting Isolation';
 
 export default () => (
+  // A materialize/bootstrap-like grid system has been implemented. Currently only col-6 class exists as a column taking up the whole row
+  // However the framework is in place to add columns of whatever size you want in the <style> tag
   <div className='grid-container'>
     <Head title="Home" />
     <Nav />
@@ -48,6 +54,12 @@ export default () => (
 
     <Footer />
 
+    {/* Note the :global(body) tag. This applies the CSS here universally to every page on the site. 
+        Because I copy-pasted this page it is also on the other pages which may cause problems if you want to change the body on another page.
+        I recommend deleting :global(body) from every page except this. */}
+
+    {/* As for columns you'll see that the class for any size has been generated (i.e. col-2, col-3, etc).
+        All you need to do when making a new column is specify the size. col-6 is 100% width because 16.66% width times 6 is 100 */}
     <style jsx>{`
       :global(body) {
         margin: 0;

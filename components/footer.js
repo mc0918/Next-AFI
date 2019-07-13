@@ -1,3 +1,5 @@
+//Basic footer... can style or add props as you like
+
 const Footer = (props) => (
     <div className='footerContainer'>
         <footer>

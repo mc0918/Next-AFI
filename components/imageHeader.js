@@ -1,6 +1,9 @@
+//Component for the jumbotron-like page header with title and background image
+
 import Link from 'next/link'
 import { string } from 'prop-types';
 
+//Note <style> tag must be a child of the main parent div
 const ImageHeader = (props) => (
     <div className='container'>
         <img src={props.image} />

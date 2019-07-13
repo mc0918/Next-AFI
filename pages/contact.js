@@ -1,3 +1,5 @@
+//Contact page... Currently just has placeholder code from one of the first drafts of the home page.
+
 import Link from 'next/link';
 import Head from '../components/head';
 import Nav from '../components/nav';

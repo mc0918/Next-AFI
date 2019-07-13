@@ -1,6 +1,9 @@
+//A sticky navbar component that stays on top of the screen as you scroll down
+
 import Link from 'next/link';
 import React from 'react'
 
+//An array of objects mapped to link variable. Allows Next to generate urls without server-side code. Label is what appears as hyperlink text.
 const links = [
   { href: 'https://www.facebook.com/groups/artistsfightingisolation/', label: 'Join!'},
   { href: '/symba', label: 'Symba'},
@@ -14,6 +17,8 @@ const links = [
   return link
 });
 
+// A constructor is necessary for this component to work as a sticky header
+// I also set this component's z-index to 1, which might make the constructor and its functions unnecessary 
 class Nav extends React.Component{
   constructor(props){
     super(props)
@@ -21,16 +26,19 @@ class Nav extends React.Component{
     this.handleScroll = this.handleScroll.bind(this)
   }
 
+  //Sets scroll variable equal to the value of the top of the viewport or 0 if at the top of the page
   handleScroll(){
     this.setState({scroll: window.scrollY})
   }
 
+  //Gives this nav component two states equal to the position in pixels away from the top of the page (offsetTop) and from the parent element (offsetHeight)
   componentDidMount(){
     const el = document.querySelector('nav');
     this.setState({top: el.offsetTop, height: el.offsetHeight});
     window.addEventListener('scroll', this.handleScroll)
   }
 
+  //Adds padding if page has been scrolled... Not currently in use thanks to z-index
   componentDidUpdate(){
     this.state.scroll > this.state.top ? document.body.style.paddingTop = `0px` :
     document.body.style.paddingTop = 0;
@@ -40,6 +48,7 @@ class Nav extends React.Component{
       <nav className={this.state.scroll > this.state.top ? "fixed-nav" : ""}>
         <ul>
         <li>
+         {/* prefetch allows faster loading */}
          <Link prefetch href="/">
            <img className="logo" src="../static/AFI-Flat-Logo-Color.png"/>
          </Link>

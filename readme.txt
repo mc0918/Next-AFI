@@ -1,0 +1,1 @@
+If you're looking for the best documentation/descriptions as to how the code of the components and pages work, your best bet is to start with the CardImgLeft Component and index.js page.

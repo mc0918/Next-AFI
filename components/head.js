@@ -1,3 +1,5 @@
+//The head of the html page. Put metadata here for SEO
+
 import NextHead from 'next/head';
 import { string } from 'prop-types';
 
